@@ -1,1 +1,8 @@
 /* Write your CSS here */
+.centerText{
+    text-align: center;
+}
+.input-group{
+align-content: center; 
+    width: 50%;
+}

@@ -5,38 +5,67 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Your CSS Linked Below-->
     <link rel="stylesheet" href="css/index.css">
   </head>
   <body>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="centerText">Movie Finder</h1>
+      </div>
+    </div>
     
-    Hi there!
-    
-    
-    
-    
-    
-    
+    <div>
+      <h4>Know a movie? Add it!</h4>
+        <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Movie Title and Genre</span>
+        </div>
+        <input type="text" class="form-control" id="name">
+        <input type="text" class="form-control" id="genre">
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button" id="button-addon">Add</button>
+          </div>
+      </div>
+    </div>
+
+
+   <div class= ></div>
+    <div class="container">
+      <div class="row">
+        
+        </div>
+        
+        </div>
+       
+        </div>
+      </div>
+    </div>
+
     
     <!-- jQuery Linked Below-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Your Javascript Linked Below-->
-    <script src="js/index.js" type="module" defer></script> 
-<!-- fire base Below-->
+    <!-- Firebase -->
     <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
     <script>
       // Initialize Firebase
       var config = {
-        apiKey: "AIzaSyChJSG9G9M4hWUzcRO19INpLh1nG-Q3Xds",
-        authDomain: "project1-bf80c.firebaseapp.com",
-        databaseURL: "https://project1-bf80c.firebaseio.com",
-        projectId: "project1-bf80c",
-        storageBucket: "project1-bf80c.appspot.com",
-        messagingSenderId: "56962782532"
+        apiKey: "AIzaSyCMY8lc8Ckzn5g1F2-Re9iAaE9pWO9e1Tc",
+        authDomain: "project1-68bc6.firebaseapp.com",
+        databaseURL: "https://project1-68bc6.firebaseio.com",
+        projectId: "project1-68bc6",
+        storageBucket: "project1-68bc6.appspot.com",
+        messagingSenderId: "211357766353"
       };
       firebase.initializeApp(config);
     </script>
-  
-  
+    <!-- Bootstrap Javascript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Your Javascript Linked Below-->
+    <script src="js/index.js" type="module" defer></script>
   </body>
 </html>
