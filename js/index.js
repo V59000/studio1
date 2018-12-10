@@ -18,8 +18,9 @@ databaseRef.on('value',function(snapshot) {
  for (var key in databaseValues){
     var movieName = databaseValues[key].name;
     var movieGenre = databaseValues[key].genre;
+    var movieImage = databaseValues[key].image;
     $('#results').append(
-        "<div class='col-sm'><div class='card'><img class='card-image-top' src='http://www.website.com'><div class='card-body'><h5 class='card-title'>"+movieName+ "  "+"</h5><p>"+movieGenre+"</p></div></div></div>"
+        "<div class='col-sm-3'><div class='card'><img class='card-image-top small-img' src="+movieImage+"><div class='card-body'><h5 class='card-title'>"+movieName+ "  "+"</h5><p>"+movieGenre+"</p></div></div></div>"
     );
  }
 
@@ -29,9 +30,11 @@ databaseRef.on('value',function(snapshot) {
 $('#button-addon').click(function(){
     var genreName=$('#genre').val();
     var movieName=$("#name").val()
+    var imageLink=$("#link").val();
     databaseRef.push({
         "name": movieName,
-        "genre": genreName
+        "genre": genreName,
+        "image": imageLink
     });
    // $("#genre").val()
    //clear text from input after button is pressed so no extra object is added

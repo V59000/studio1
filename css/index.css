@@ -6,3 +6,12 @@
 align-content: center; 
     width: 50%;
 }
+.small-img{
+    height: 200px;
+}
+#padding-left{
+    padding-left: 20%;
+}
+.big-input{
+    width: 400px;
+}
